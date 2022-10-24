@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+	<!-- CSS Reset : BEGIN -->
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			background: #f1f1f1;
+		}
+
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		/* What it does: Stops Outlook from adding extra spacing to tables. */
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		/* What it does: Fixes webkit padding issue. */
+		table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+
+		a {
+			text-decoration: none;
+		}
+	</style>
+
+	<!-- CSS Reset : END -->
+
+	<!-- Progressive Enhancements : BEGIN -->
+	<style>
+		.primary {
+			background: #f85e9f;
+		}
+
+		.bg_white {
+			background: #ffffff;
+		}
+
+		.bg_footer {
+			background: #3C3C3B;
+		}
+
+		.bg_light {
+			background: #ffffff;
+		}
+
+		.bg_black {
+			background: #000000;
+		}
+
+		.bg_dark {
+			background: rgba(0, 0, 0, .8);
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Lato', sans-serif;
+			color: #000000;
+			font-weight: 400;
+		}
+
+		body {
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 1.8;
+			color: rgba(0, 0, 0, .4);
+		}
+
+		a {
+			color: rgb(255, 255, 255);
+		}
+
+		table {}
+
+
+
+		/*HERO*/
+		.hero {
+			position: relative;
+			z-index: 0;
+		}
+
+		.hero .text {
+			color: rgba(0, 0, 0, .3);
+		}
+
+		.hero .text h2 {
+			color: #000;
+			font-size: 30px;
+			margin-bottom: 0;
+			font-weight: 300;
+		}
+
+		.hero .text h2 span {
+			font-weight: 600;
+			color: #f85e9f;
+		}
+
+
+		/*HEADING SECTION*/
+		.heading-section {}
+
+		.heading-section h2 {
+			color: #000000;
+			font-size: 28px;
+			margin-top: 0;
+			line-height: 0;
+			font-weight: 400;
+		}
+
+		.heading-section .subheading {
+			margin-bottom: 20px !important;
+			display: inline-block;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: rgba(0, 0, 0, .4);
+			position: relative;
+		}
+
+		.heading-section .subheading::after {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -10px;
+			content: '';
+			width: 100%;
+			height: 2px;
+			background: #f85e9f;
+			margin: 0 auto;
+		}
+
+		.heading-section-white {
+			color: rgba(255, 255, 255, .8);
+		}
+
+		.heading-section-white h2 {
+			font-family:
+				line-height: 1;
+			padding-bottom: 0px;
+		}
+
+		.heading-section-white h2 {
+			color: #ffffff;
+		}
+
+		.heading-section-white .subheading {
+			margin-bottom: 0;
+			display: inline-block;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: rgba(255, 255, 255, .4);
+		}
+
+
+		ul.social {
+			padding: 0;
+		}
+
+		ul.social li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		li {
+			list-style-type: none;
+			list-style-image: url(images/listİcon.ico);
+			color: #706e6f;
+			font-weight: 700;
+			line-height: 1.5;
+			font-size: 15px;
+		}
+
+		/*FOOTER*/
+
+		.footer {
+			border-top: 1px solid rgba(0, 0, 0, .05);
+			color: rgba(0, 0, 0, .5);
+			padding-top: 5px;
+			padding-bottom: 19px;
+		}
+
+		.footer .heading {
+			color: rgb(255, 255, 255);
+			font-size: 11px;
+			line-height: 1;
+			font-weight: bold;
+		}
+
+		.footer ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		.footer ul li {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+
+		.footer ul li a {
+			color: rgba(0, 0, 0, 1);
+		}
+
+		img.footerİcon {
+			width: 24px;
+			max-width: 600px;
+			height: auto;
+			display: block;
+		}
+
+		td.footer-servicesİcon {
+			padding: 0px 11px;
+		}
+
+		td.footer-servicesText {
+			padding: 0px 31px;
+		}
+
+		td.footer-services {
+			padding: 0px 38px;
+			text-align: left;
+		}
+
+		/* 1. İşlemin css kodları*/
+		.images1 {
+			width: 128%;
+			max-width: 600px;
+			height: auto;
+			margin: auto;
+			display: block;
+			margin-left: -94px;
+			margin-bottom: -87px;
+		}
+
+		h2.baslik1 {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 99px;
+			margin-left: -4px;
+			margin-bottom: 127px;
+			font-family: system-ui;
+		}
+
+		td.text-services1 {
+			text-align: left;
+			padding: 0px 7px;
+		}
+
+		h2.baslik1b {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 15px;
+			margin-bottom: -7px;
+		}
+
+		p.paragraf1 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+		/*end */
+
+
+		/*2 işlemin css kodları*/
+		.images2 {
+			width: 156%;
+    max-width: 625px;
+    height: auto;
+    margin: auto;
+    margin-left: 1px;
+    margin-top: -124px;
+		}
+
+		h2.baslik2 {
+			line-height: 1;
+    color: #ef0027;
+    font-weight: bold;
+    font-size: 81px;
+    margin-top: -104px;
+    margin-left: 5px;
+    font-family: system-ui;
+		}
+
+		td.text-services2 {
+			text-align: left;
+			padding: 0px 40px;
+		}
+
+		h2.baslik2b {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 14px;
+			margin-bottom: -9px;
+			margin-top: -101px;
+
+		}
+
+		p.paragraf2 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+		/*end*/
+
+
+		/*3 işlemin kodları */
+		.images3 {
+			width: 158%;
+			max-width: 600px;
+			height: auto;
+			margin: auto;
+			margin-left: -170px;
+			margin-top: -72px;
+			display: block;
+		}
+
+		h2.baslik3 {
+			line-height: 1;
+    color: #ef0027;
+    font-weight: bold;
+    font-size: 100px;
+    margin-left: -7px;
+    margin-top: -43px;
+    font-family: system-ui;
+		}
+
+		td.text-services3 {
+			text-align: left;
+			padding: 0px 20px;
+		}
+
+		h2.baslik3b {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			position: relative;
+			font-size: 14px;
+			margin-bottom: -9px;
+			margin-top: -83px;
+		}
+
+		p.paragraf3 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+
+		/*End */
+
+
+		/*4 işlemin css kodları */
+		.images4 {
+			width: 118%;
+			max-width: 639px;
+			height: auto;
+			margin: auto;
+			position: relative;
+			margin-left: -18px;
+			margin-top: -87px;
+		}
+
+		h2.baslik4 {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 97px;
+			margin-top: -140px;
+			margin-left: 10px;
+			font-family: system-ui;
+		}
+
+		h2.baslik4b {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 15px;
+			margin-bottom: -10px;
+			margin-top: -186px;
+		}
+
+		p.paragraf4 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+		td.text-services4 {
+			text-align: left;
+			padding: 0px 59px;
+			padding-top: 109px;
+		}
+
+		/*end*/
+
+
+		/*5 islemin css kodları */
+		.images5 {
+			width: 133%;
+			margin-left: -93px;
+			margin-top: -190px;
+			max-width: 600px;
+			height: auto;
+
+		}
+
+		h2.baslik5 {
+			font-size: 95px;
+			margin-left: -3px;
+			margin-top: -4px;
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-family: system-ui;
+		}
+
+		td.text-services5 {
+			text-align: left;
+			padding: 0px 16px;
+		}
+
+		h2.baslik5b {
+			font-size: 15px;
+			margin-bottom: -8px;
+			margin-top: -33px;
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+		}
+
+		p.paragraf5 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+		/*end */
+
+
+		/* 6 işlemin css kodları */
+		.images6 {
+			width: 170%;
+    	margin-left: -3px;
+    	margin-top: -121px;
+    	max-width: 639px;
+    	height: auto;
+
+		}
+
+		td.text-services6 {
+			text-align: left;
+			padding: 0px 34px;
+		}
+
+		h2.baslik6 {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 105px;
+			margin-top: -65px;
+			margin-left: -15px;
+			font-family: system-ui;
+		}
+
+		h2.baslik6b {
+			font-size: 14px;
+			margin-bottom: -8px;
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			margin-top: -86px;
+		}
+
+		p.paragraf6 {
+			color: #727480;
+			font-weight: bold;
+			line-height: 1.2;
+			font-size: 11px;
+		}
+
+		/*end */
+
+		/* 7 işlemin css kodları */
+		.images7 {
+			max-width: 600px;
+			height: auto;
+			margin: auto;
+			display: block;
+			width: 115%;
+			margin-left: -52px;
+			margin-top: -194px;
+
+		}
+
+		h2.baslik7 {
+			font-size: 96px;
+			margin-left: 10px;
+			margin-top: 35px;
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-family: system-ui;
+
+		}
+
+		td.text-services7 {
+			text-align: left;
+			padding: 16px 12px;
+		}
+
+		h2.baslik7b {
+			font-size: 15px;
+			margin-bottom: -9px;
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+
+		}
+
+		p.paragraf7 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+		/*end */
+
+
+		/* 8 işlemin css kodları */
+		.images8 {
+			width: 149%;
+			max-width: 600px;
+			height: auto;
+			margin: auto;
+			display: block;
+			margin-top: -86px;
+			margin-bottom: -29px;
+			margin-left: 27px;
+		}
+
+		h2.baslik8 {
+			font-size: 101px;
+			margin-left: -30px;
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			margin-bottom: 84px;
+			font-family: system-ui;
+		}
+
+		td.text-services8 {
+			text-align: left;
+			padding: 0px 9px;
+		}
+
+		h2.baslik8b {
+			line-height: 1;
+			color: #ef0027;
+			font-weight: bold;
+			font-size: 15px;
+			margin-bottom: -9px;
+			margin-top: 75px;
+		}
+
+		p.paragraf8 {
+			color: #727480;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 12px;
+		}
+
+		/*end */
+
+
+		/* 9 işlemin css kodları */
+		td.text-services10 {
+			text-align: left;
+			padding: 20px 30px;
+		}
+
+		h3.baslik9 {
+			font-size: 18px;
+			margin-left: 21px;
+			margin-bottom: -4px;
+			line-height: 1;
+			font-weight: 700;
+			color: #3c3c3c;
+			font-family: system-ui;
+
+		}
+
+		.images9 {
+			width: 100%;
+			max-width: 600px;
+			margin-bottom: 2em;
+			height: auto;
+			margin: auto;
+			display: block;
+		}
+
+		@media only screen and (min-width:401px) and  (max-width:480px)   {
+	
+			/* 1 işlemin css kodları*/
+			.images1 {
+				width: 116%;
+				max-width: 600px;
+				margin-left: -71px;
+				margin-bottom: -30px;
+
+			}
+
+			h2.baslik1 {
+				font-size: 61px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-left: 1px;
+				margin-bottom: 88px;
+			}
+
+			td.text-services1 {
+				text-align: left;
+				padding: 0px 14px;
+			}
+
+			h2.baslik1b {
+				font-size: 8px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-bottom: -4px;
+			}
+
+			p.paragraf1 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1.2;
+				font-size: 7px;
+			}
+
+			/*end */
+
+
+			/*2 işlemin css kodları*/
+			.images2 {
+				width: 132%;
+				width: 138%;
+				max-width: 628px;
+				height: auto;
+				margin: auto;
+				margin-left: 17px;
+				margin-top: -96px;
+			}
+
+			h2.baslik2 {
+				font-size: 51px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-top: -92px;
+    			margin-left: 11px;
+			}
+
+			td.text-services2 {
+				text-align: left;
+				padding: 0px 37px;
+			}
+
+			h2.baslik2b {
+				font-size: 9px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-bottom: -7px;
+				margin-top: -76px;
+			}
+
+			p.paragraf2 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1;
+				font-size: 8px;
+			}
+
+			/*end*/
+
+			/*3 işlemin kodları */
+			.images3 {
+				width: 134%;
+				max-width: 600px;
+				height: auto;
+				margin: auto;
+				margin-left: -108px;
+				display: block;
+				margin-top: -49px;
+			}
+
+			h2.baslik3 {
+				font-size: 55px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-left: -2px;
+				margin-top: -57px;
+			}
+
+			td.text-services3 {
+				text-align: left;
+				padding: 0px 15px;
+			}
+
+			h2.baslik3b {
+				font-size: 9px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-bottom: -7px;
+				margin-top: -60px;
+				position: relative;
+			}
+
+			p.paragraf3 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1;
+				font-size: 8px;
+			}
+
+
+			/*End */
+
+			/*4 islemin css kodları */
+			.images4 {
+				width: 104%;
+				margin-left: -8px;
+				margin-top: -51px;
+				position: relative;
+			}
+
+			h2.baslik4 {
+				font-size: 53px ;
+   			 	margin-top: -107px;
+    			margin-left: 0px;
+			}
+
+			h2.baslik4b {
+				font-size: 10px ;
+				margin-bottom: -9px;
+				margin-top: -141px;
+			}
+
+			p.paragraf4 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1.2;
+				font-size: 8px !important;
+			}
+
+			td.text-services4 {
+				text-align: left;
+				padding: 0px 29px !important;
+				padding-top: 110px !important;
+			}
+
+			/* End*/
+
+
+			/*5 islemin css kodları */
+			.images5 {
+				width: 132%;
+				margin-left: -79px;
+				margin-top: -115px;
+			}
+
+			h2.baslik5 {
+				font-size: 58px;
+    			margin-left: -12px;
+    			margin-top: -48px;
+			}
+
+			td.text-services5 {
+				text-align: left;
+				padding: 0px 4px;
+			}
+
+			h2.baslik5b {
+				font-size: 9px;
+				margin-bottom: -8px;
+				margin-top: -55px;
+			}
+
+			p.paragraf5 {
+				color: #727480;
+				font-size: 8px;
+			}
+
+			/*end */
+
+
+			/* 6 işlemin css kodları */
+			.images6 {
+				width: 152%;
+				margin-left: 17px;
+				margin-top: -76px;
+			}
+
+			td.text-services6 {
+				text-align: left;
+				padding: 0px 12px;
+			}
+
+			h2.baslik6 {
+				font-size: 58px;
+				margin-top: -57px;
+				margin-left: -20px;
+			}
+
+			h2.baslik6b {
+				font-size: 9px;
+				margin-bottom: -8px;
+				margin-top: -51px;
+			}
+
+			p.paragraf6 {
+				color: #727480;
+				font-size: 8px;
+			}
+
+			/*end */
+
+			/* 7 işlemin css kodları */
+			.images7 {
+			    width: 115%;
+    margin-left: -56px;
+    margin-top: -104px;
+			}
+
+			h2.baslik7 {
+				font-size: 58px;
+				margin-left: 0px;
+				margin-top: 24px;
+			}
+
+			td.text-services7 {
+				text-align: left;
+				padding: 0px 3px;
+				padding-top: 7px;
+			}
+
+			h2.baslik7b {
+				font-size: 9px;
+				margin-bottom: -7px;
+				margin-top: 6px;
+			}
+
+			p.paragraf7 {
+				color: #727480;
+				font-size: 8px;
+			}
+
+			/*end */
+
+			/* 8 işlemin css kodları */
+			.images8 {
+				width: 135%;
+				max-width: 600px;
+				margin-left: 26px;
+				margin-bottom: -1px;
+				margin-top: -41px;
+			}
+
+			h2.baslik8 {
+				font-size: 58px;
+				margin-left: -25px;
+				margin-bottom: 58px;
+			}
+
+			td.text-services8 {
+				text-align: left;
+				padding: 0px 2px;
+			}
+
+			h2.baslik8b {
+				font-size: 10px;
+				margin-bottom: -9px;
+				margin-top: 73px;
+
+			}
+
+			p.paragraf8 {
+				color: #727480;
+				font-size: 9px;
+			}
+
+			/*end */
+			/* 9 işlemin css kodları */
+			td.text-services9 {
+				padding: px 30px;
+			}
+
+			h3.baslik9 {
+				font-size: 12px;
+				margin-left: 21px;
+				margin-bottom: -4px;
+			}
+
+			li {
+				font-size: 11px;
+			}
+
+			.footer .heading {
+				font-size: 8px;
+			}
+
+			.images9 {
+				width: 100%;
+				max-width: 600px;
+				margin-bottom: 2em;
+			}
+
+			img.footerİcon {
+				width: 12px;
+				max-width: 600px;
+				height: auto;
+				display: block;
+			}
+
+			/*end */
+
+
+
+			td.footer-servicesİcon {
+				padding: 0px 0px;
+			}
+
+			td.footer-servicesText {
+				padding: 0px 5px !important;
+			}
+
+			td.footer-services {
+				padding: 0px 13px;
+				text-align: left;
+			}
+		
+		}
+
+		@media only screen and (min-width:480px) and  (max-width:530px)   {
+	
+	/* 1 işlemin css kodları*/
+	.images1{
+		width: 128% ;
+    max-width: 600px;
+	height: auto;
+    margin: auto;
+    display: block;
+	margin-left: -70px;
+    margin-bottom: -92px;
+}
+	h2.baslik1{
+	font-size: 99px ;
+	margin-left: 0px;
+	margin-bottom: 128px;
+	margin-top: 77px;
+} 
+td.text-services1{
+	text-align: left;
+	 padding: 0px 21px ;
+} 
+h2.baslik1b{
+	font-size: 13px ;
+    margin-bottom: -7px;
+}
+p.paragraf1{
+	font-size: 11px ;
+}
+/*end */
+
+
+/*2 işlemin css kodları*/
+.images2{
+	width: 162% ;
+    max-width: 628px;
+    margin-left: 6px;
+    margin-top: -122px;							
+}
+h2.baslik2{
+	font-size: 76px;
+    margin-top: -108px;
+    margin-left: 5px;
+}
+
+td.text-services2{
+	text-align: left;
+	padding: 0px 40px;
+}
+h2.baslik2b{
+	font-size: 14px;
+    margin-bottom: -9px;
+    margin-top: -101px; 
+}
+p.paragraf2{
+	color: #727480;
+    line-height: 1.2;
+    font-size: 11px;
+}
+/*end*/
+
+/*3 işlemin kodları */
+.images3{
+    width: 158%;
+    max-width: 600px;
+    margin-left: -134px;
+    margin-top: -70px;
+
+}
+
+h2.baslik3{
+	font-size: 91px;
+    margin-left: 0px;
+    margin-top: -76px; 
+}
+
+td.text-services3{
+	text-align: left; 
+	padding: 0px 30px;
+}
+
+h2.baslik3b{
+	font-size: 14px;
+    margin-bottom: -9px;
+    margin-top: -83px;
+}
+
+p.paragraf3{
+    font-size: 12px;
+}
+
+
+/*End */
+
+/*4 islemin css kodları */
+.images4{
+	width: 118%;
+	 margin-left: -18px;
+	  margin-top: -87px;
+	 position: relative;
+}
+
+	 h2.baslik4 {
+		font-size: 76px !important;
+    margin-top: -122px;
+    margin-left: 2px;
+	}
+	h2.baslik4b{
+		font-size: 14px;
+    margin-bottom: -10px;
+    margin-top: -162px;
+	}
+
+	p.paragraf4{
+	color: #727480;
+	font-weight: 500;
+	line-height: 1.2; 
+	font-size: 11px !important;
+	}
+	td.text-services4 {
+		text-align: left; 
+		padding: 0px 40px !important;
+		 padding-top: 110px !important;
+	} 
+/* End*/
+
+
+/*5 islemin css kodları */
+.images5{
+	width: 132%;
+    margin-left: -97px;
+    margin-top: -165px;
+	}
+	h2.baslik5{
+		font-size: 83px;
+    margin-left: -5px;
+    margin-top: -18px;
+		}
+
+td.text-services5{
+			text-align: left; 
+			padding: 0px 16px;
+		}
+h2.baslik5b{
+	font-size: 12px;
+    margin-bottom: -8px;
+    margin-top: -33px;
+		}
+	p.paragraf5{
+	color: #727480;
+    font-size: 11px;
+		}
+	/*end */
+
+
+		/* 6 işlemin css kodları */
+.images6{
+	width: 156%;
+    margin-left: -2px;
+    margin-top: -107px;
+}
+td.text-services6{
+	text-align: left;
+    padding: 0px 25px;
+}
+h2.baslik6{
+	margin-left: -27px;
+    font-size: 101px;
+    margin-top: -14px;
+}
+h2.baslik6b{
+	font-size: 11px;
+    margin-bottom: -6px;
+}
+p.paragraf6{
+    color: #727480;
+    font-size: 9px;
+}
+
+/*end */
+
+/* 7 işlemin css kodları */
+.images7{
+    width: 115%;
+    margin-left: -67px;
+    margin-top: -143px;
+}
+
+h2.baslik7{
+	font-size: 91px;
+    margin-left: -2px;
+    margin-top: 27px;
+}
+td.text-services7{
+	text-align: left;
+	 padding: 16px 12px;
+}
+
+h2.baslik7b{
+	font-size: 15px;
+    margin-bottom: -9px;
+}
+p.paragraf7{
+	color: #727480;
+    font-size: 11px;
+}
+
+/*end */
+
+/* 8 işlemin css kodları */
+.images8{
+	width: 145%;
+    max-width: 600px;
+	margin-left: -30px;
+	margin-left: 9px;
+}
+
+h2.baslik8{
+	font-size: 99px;
+    margin-left: -36px;
+}
+td.text-services8{
+	text-align: left;
+    padding: 0px 9px;
+}
+h2.baslik8b{
+	font-size: 15px;
+    margin-bottom: -9px;
+    margin-top: 126px;
+}
+p.paragraf8{
+	color: #727480;
+    font-size: 12px;
+}
+/*end */
+
+
+/* 9 işlemin css kodları */
+td.text-services10{
+	text-align: left;
+	 padding: 20px 30px;
+}
+
+h3.baslik9{
+	font-size: 18px;
+	   margin-left: 21px;
+	  margin-bottom: -4px;
+}
+
+.images9{
+	width: 100%; 
+	max-width: 600px;
+	  margin-bottom: 2em;
+}
+/*end */
+
+td.footer-servicesİcon{
+	padding: 0px 0px;
+}
+td.footer-servicesText{
+	padding: 0px 5px !important;
+}
+td.footer-services{
+	padding: 0px 13px;
+	 text-align:left;
+}
+
+}
+
+
+		/*end */
+		@media only screen and (min-width:360px) and (max-width:400px) {
+
+			/* 1 işlemin css kodları*/
+			.images1 {
+				width: 116%;
+				max-width: 600px;
+				margin-left: -57px;
+				margin-bottom: -27px;
+
+			}
+
+			h2.baslik1 {
+				font-size: 61px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-left: 1px;
+				margin-bottom: 88px;
+			}
+
+			td.text-services1 {
+				text-align: left;
+				padding: 0px 14px;
+			}
+
+			h2.baslik1b {
+				font-size: 8px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-bottom: -4px;
+			}
+
+			p.paragraf1 {
+				color: #727480;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 7px;
+			}
+
+			/*end */
+
+
+			/*2 işlemin css kodları*/
+			.images2 {
+				width: 132%;
+				max-width: 628px;
+				height: auto;
+				margin: auto;
+				margin-left: 16px;
+				margin-top: -94px;
+			}
+
+			h2.baslik2 {
+				font-size: 51px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-top: -92px;
+    			margin-left: 11px;
+			}
+
+			td.text-services2 {
+				text-align: left;
+				padding: 0px 37px;
+			}
+
+			h2.baslik2b {
+				font-size: 9px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-bottom: -7px;
+				margin-top: -76px;
+			}
+
+			p.paragraf2 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1;
+				font-size: 8px;
+			}
+
+			/*end*/
+
+			/*3 işlemin kodları */
+			.images3 {
+				width: 134%;
+				max-width: 600px;
+				height: auto;
+				margin: auto;
+				margin-left: -108px;
+				display: block;
+				margin-top: -49px;
+			}
+
+			h2.baslik3 {
+				font-size: 55px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-left: -2px;
+				margin-top: -57px;
+			}
+
+			td.text-services3 {
+				text-align: left;
+				padding: 0px 15px;
+			}
+
+			h2.baslik3b {
+				font-size: 9px;
+				line-height: 1;
+				color: #ef0027;
+				font-weight: bold;
+				margin-bottom: -7px;
+				margin-top: -60px;
+				position: relative;
+			}
+
+			p.paragraf3 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1;
+				font-size: 8px;
+			}
+
+
+			/*End */
+
+			/*4 islemin css kodları */
+			.images4 {
+				width: 104%;
+				margin-left: -8px;
+				margin-top: -51px;
+				position: relative;
+			}
+
+			h2.baslik4 {
+				font-size: 53px ;
+   			 	margin-top: -107px;
+    			margin-left: 0px;
+			}
+
+			h2.baslik4b {
+				font-size: 10px ;
+				margin-bottom: -9px;
+				margin-top: -141px;
+			}
+
+			p.paragraf4 {
+				color: #727480;
+				font-weight: 900;
+				line-height: 1.2;
+				font-size: 8px !important;
+			}
+
+			td.text-services4 {
+				text-align: left;
+				padding: 0px 29px !important;
+				padding-top: 110px !important;
+			}
+
+			/* End*/
+
+
+			/*5 islemin css kodları */
+			.images5 {
+				width: 132%;
+				margin-left: -79px;
+				margin-top: -115px;
+			}
+
+			h2.baslik5 {
+				font-size: 58px;
+    			margin-left: -12px;
+    			margin-top: -48px;
+			}
+
+			td.text-services5 {
+				text-align: left;
+				padding: 0px 4px;
+			}
+
+			h2.baslik5b {
+				font-size: 9px;
+				margin-bottom: -8px;
+				margin-top: -55px;
+			}
+
+			p.paragraf5 {
+				color: #727480;
+				font-size: 8px;
+			}
+
+			/*end */
+
+
+			/* 6 işlemin css kodları */
+			.images6 {
+				width: 155%;
+				margin-left: 2px;
+				margin-top: -70px;
+			}
+
+			td.text-services6 {
+				text-align: left;
+				padding: 0px 12px;
+			}
+
+			h2.baslik6 {
+				font-size: 58px;
+				margin-top: -57px;
+				margin-left: -20px;
+			}
+
+			h2.baslik6b {
+				font-size: 9px;
+				margin-bottom: -8px;
+				margin-top: -51px;
+			}
+
+			p.paragraf6 {
+				color: #727480;
+				font-size: 8px;
+			}
+
+			/*end */
+
+			/* 7 işlemin css kodları */
+			.images7 {
+				width: 115%;
+				margin-left: -59px;
+				margin-top: -113px;
+
+			}
+
+			h2.baslik7 {
+				font-size: 58px;
+				margin-left: 0px;
+				margin-top: 24px;
+			}
+
+			td.text-services7 {
+				text-align: left;
+				padding: 0px 3px;
+				padding-top: 7px;
+			}
+
+			h2.baslik7b {
+				font-size: 9px;
+				margin-bottom: -7px;
+				margin-top: 6px;
+			}
+
+			p.paragraf7 {
+				color: #727480;
+				font-size: 8px;
+			}
+
+			/*end */
+
+			/* 8 işlemin css kodları */
+			.images8 {
+				width: 135%;
+				max-width: 600px;
+				margin-left: 18px;
+				margin-bottom: -1px;
+				margin-top: -54px;
+			}
+
+			h2.baslik8 {
+				font-size: 58px;
+				margin-left: -25px;
+				margin-bottom: 58px;
+			}
+
+			td.text-services8 {
+				text-align: left;
+				padding: 0px 2px;
+			}
+
+			h2.baslik8b {
+				font-size: 10px;
+				margin-bottom: -9px;
+				margin-top: 73px;
+
+			}
+
+			p.paragraf8 {
+				color: #727480;
+				font-size: 9px;
+			}
+
+			/*end */
+
+
+			/* 9 işlemin css kodları */
+			td.text-services9 {
+				padding: px 30px;
+			}
+
+			h3.baslik9 {
+				font-size: 12px;
+				margin-left: 21px;
+				margin-bottom: -4px;
+			}
+
+			li {
+				font-size: 11px;
+			}
+
+			.footer .heading {
+				font-size: 8px;
+			}
+
+			.images9 {
+				width: 100%;
+				max-width: 600px;
+				margin-bottom: 2em;
+			}
+
+			img.footerİcon {
+				width: 12px;
+				max-width: 600px;
+				height: auto;
+				display: block;
+			}
+
+			/*end */
+
+
+
+			td.footer-servicesİcon {
+				padding: 0px 0px;
+			}
+
+			td.footer-servicesText {
+				padding: 0px 5px !important;
+			}
+
+			td.footer-services {
+				padding: 0px 13px;
+				text-align: left;
+			}
+
+		}
+	</style>
+
+
+</head>
+
+<body width="100%">
+	<center style="width: 100%; background-color: #f1f1f1;">
+		<div
+			style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+			&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+		</div>
+		<div style="max-width: 600px; margin: 0 auto;" class="email-container">
+			<!-- BEGIN BODY -->
+			<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+				style="margin: auto;">
+				<tr>
+					<td valign="top" class="bg_white" style="padding: 1em 2.5em 0 2.5em;">
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="logo" style="text-align: center;">
+									<a href="https://www.egbilisim.com.tr/" target="_blank"><img alt="Logo"
+											src="images/logo.png" width="276" height="75"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr><!-- end tr -->
+
+				<tr>
+					<td valign="middle" class="hero hero-2 bg_white" style="padding: 0em 0 0em 0;">
+						<a href="https://www.egbilisim.com.tr/" target="_blank"><img alt="Logo" src="images/2gorsel.jpg"
+								style="width: 100%; max-width: 797px; height: auto; margin: auto; display: block;"></a>
+					</td>
+				</tr><!-- end tr -->
+
+				<tr>
+					<td class="bg_white">
+						<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+
+
+
+							<!-- 1 işlemin kodları -->
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="7%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik1">1</h2>
+											</td>
+											<td valign="middle" width="37%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services1">
+															<div class="heading-section">
+																<h2 class="baslik1b">Planlama ve Kurulum</h2>
+																<p class="paragraf1">Dijital pazarlamaya iyi bir
+																	başlangıç yapabilmeniz için her adımı düşünülmüş ve
+																	tam anlamıyla eksiksiz bir reklam kurulumu
+																	sağlıyoruz. </p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="50%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/1.png" alt="" class="images1">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/2.png" alt="" class="images2">
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="4%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik2">2</h2>
+											</td>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services2">
+															<div class="heading-section">
+																<h2 class="baslik2b">Sizi Arayacağız</h2>
+																<p class="paragraf2">Alanında uzman ekibimiz sizlerle
+																	iletişime geçerek tanışacak ve süreç hakkında bilgi
+																	verecekler.</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+
+
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="7%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik3">3</h2>
+											</td>
+											<td valign="middle" width="54%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services3">
+															<div class="heading-section">
+																<h2 class="baslik3b">Performans Raporları</h2>
+																<p class="paragraf3">Reklam kampanyalarınıza ilişkin
+																	performans verilerinizi analiz edeceğiz. İşletmenize
+																	özel rapor tanımlaması yaparak, e-posta ile düzenli
+																	olarak sizlerle paylaşacağız.</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="50%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/3.png" alt="" class="images3">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+
+							<!-- 4 işlemin kodları -->
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/4.png" alt="" class="images4">
+														</td>
+													</tr>
+												</table>
+											</td>
+
+											<td valign="middle" width="4%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik4">4</h2>
+											</td>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services4">
+															<div class="heading-section">
+																<h2 class="baslik4b">İlk Raporunuz </h2>
+																<p class="paragraf4">Müşteri İlişkileri Yöneticiniz
+																	sizinle iletişime geçecek ve
+																	tarafınıza ilettiğimiz ilk raporu
+																	birlikte değerlendireceğiz.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+							<!-- 5 işlemin kodları -->
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="7%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik5">5</h2>
+											</td>
+											<td valign="middle" width="37%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services5">
+															<div class="heading-section">
+																<h2 class="baslik5b">İlk Hafta Değerlendirmesi</h2>
+																<p class="paragraf5">Müşteri İlişkileri Yöneticiniz
+																	sizinle iletişime geçerek ilk hafta yapılan
+																	çalışmalar ve elde edilen veriler hakkında sizi
+																	bilgilendirecek.</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="50%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/5.png" alt="" class="images5">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+							<!-- 6 işlemin html kodları-->
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/6.png" alt="" class="images6">
+														</td>
+													</tr>
+												</table>
+											</td>
+
+											<td valign="middle" width="4%" style=" padding-left:12px; ">
+												<h2 class="baslik6">6</h2>
+											</td>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services6">
+															<div class="heading-section">
+																<h2 class="baslik6b">Yeniden Pazarlama Kampanyalarına
+																	Giriş</h2>
+																<p class="paragraf6">Web sitenize çekeceğimiz tüm
+																	kullanıcılar
+																	potansiyel müşterilerinizdir. Sitenizi ziyaret
+																	etmiş kullanıcıların, farklı web sitelerinde
+																	gezinti yaparken, hazırlayacağımız görseller
+																	ile karşılar na çıkararak hem marka
+																	bilinirliğinizi artıracak hem de sitenize
+																	yönlendirme</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+							<!-- 6 işlemin html kodları-->
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="14%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik7">7</h2>
+											</td>
+											<td valign="middle" width="45%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services7">
+															<div class="heading-section">
+																<h2 class="baslik7b">Rakip Analizi</h2>
+																<p class="paragraf7"> Hedefleriniz doğrultusunda yapılan
+																	strateji ve planlanmanın yanı sıra
+																	rakiplerinizin de analizini yaparak
+																	sizinle paylaşacağız. </p>
+
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="63%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/7.png" alt="" class="images7">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="52%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/8.png" alt="" class="images8">
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="5%"
+												style=" padding-left:12px; padding-top: 20px;">
+												<h2 class="baslik8">8</h2>
+											</td>
+											<td valign="middle" width="43%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services8">
+															<div class="heading-section">
+																<h2 class="baslik8b">Aylık Performans Değerlendirmesi
+																</h2>
+																<p class="paragraf8">Sürece ilişkin ürün veya hizmet
+																	performansları, dönüşüm ve
+																	kazanımlar gibi birçok veriyi aylık
+																	olarak size e-posta ile ileteceğiz.
+																	Kampanyaları sürekli optimize
+																	ederek hedefinize emin adımlarla
+																	ilerleyeceğiz.</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+
+
+							<tr>
+								<td class="bg_light email-section" style="padding: 0; width: 100%;">
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td valign="middle" width="50%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td class="text-services9">
+															<div class="heading-section">
+																<h3 class="baslik9">Düzenli Olarak Yapılacak Takip ve
+																	Kontroller</h3>
+																<ul>
+																	<li>Günlük Bütçe Takibi</li>
+																	<li>Reklam Kampanyalarınızın Optimizasyonları</li>
+																	<li>Performans Takibi</li>
+																	<li>Rekabet Düzeyi Kontrolü</li>
+																	<li>Raporlamalara İlişkin Kontroller</li>
+																</ul>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="middle" width="50%">
+												<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+													width="100%">
+													<tr>
+														<td>
+															<img src="images/9.jpg" alt="" class="images9">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+
+							<!-- 1 Column Text + Button : END -->
+						</table>
+
+
+
+						<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+							width="100%" style="margin: auto;">
+							<tr>
+								<td valign="middle" class="bg_footer footer">
+									<table>
+										<tr style="text-align: center;">
+											<td valign="middle" width="35%%" class="footer-services">
+												<h3 class="heading"><a href="mailto:bildirim@egbilisim.com.tr">bildirim@egbilisim.com.tr</a></h3>
+												<h3 class="heading" style="line-height: 0.1 !important;"><a
+														href="tel:+02122334101">0212 233 41 01</a></h3>
+											</td>
+											<td valign="middle" width="35%%" class="footer-servicesText">
+												<h4 class="heading">Esentepe Mah. Matbuat Sok.
+													Durukan Apt. No:17/2 34394,
+													Şişli / İSTANBUL</h4>
+											</td>
+											<td valign="middle" width="35%" class="footer-servicesİcon">
+												<ul class="social">
+													<li><a href="https://www.facebook.com/egbilisim"
+															alt="Eg bilişim Teknolojileri" target="_blank">
+															<img src="images/005-facebook.png" alt=""
+																class="footerİcon"></a>
+													</li>
+													<li><a href="https://www.instagram.com/egbilisim/"
+															alt="Eg bilişim Teknolojileri" target="_blank">
+															<img src="images/006-instagram-logo.png" alt=""
+																class="footerİcon"></a>
+													</li>
+													<li><a href="https://www.linkedin.com/company/egbilisim"
+															alt="Eg bilişim Teknolojileri" target="_blank">
+															<img src="images/linkedin.png" alt=""
+																class="footerİcon"></a>
+													</li>
+													<li><a href="https://www.youtube.com/channel/UCDCVyxc78ZngirZCJVPCGjg"
+															alt="Eg bilişim Teknolojileri" target="_blank">
+															<img src="images/youtube.png" alt="" class="footerİcon"></a>
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr><!-- end: tr -->
+						</table>
+
+		</div>
+	</center>
+</body>
+</html>
